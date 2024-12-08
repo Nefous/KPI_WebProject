@@ -10,156 +10,253 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <div class="top-nav">
-            <nav>
-                <ul>
-                    <li><a href="../pages/callmeback.html">Передзвоніть мені</a></li>
-                    <li><a href="../pages/find.html">Знайти магазин</a></li>
-                    <li><a href="../pages/help.html">Центр допомоги</a></li>
-                    <li><a href="../pages/chat.html">Онлайн чат</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="account-options">
-            <p><a href="#">Україснька</a></p>
-            <ul>
-                <li class="current"><a href="#">Українська</a></li>
-                <li><a href="#">English</a></li>
-            </ul>
-            <a href="../pages/track.html"><img alt="Знайти замовлення" src="../image/tracking.png">Знайти замовлення</a>
-            <a href="../pages/wishlist.html"><img alt="Список побоажань" src="../image/wishlist.png">Список побажань</a>
-            <a href="../pages/account.html"><img alt="Аккаунт" src="../image/user.png">Аккаунт</a>
-        </div>
-        <div class="header-container">
-            <a href="../index.html" class="logo"> <img alt="Логотип компанії" src="../image/logo_upd.png"> </a>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Продукти</a></li>
-                    <li><a href="../index.html">Бренди</a></li>
-                    <li><a href="../pages/agreement.html">Угода</a></li>
-                    <li><a href="../pages/gifts.html">Подарунки</a></li>
-                    <li><a href="../pages/sales.html">Знижки</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="line-container">
-            <div class="search">
-                <form action="#" method="GET" class="search-form" role="search">
-                    <label for="search-query" class="sr-only">Пошук</label>
-                    <input type="text" id="search-query" name="query" class="search-input" placeholder="Пошук..."
-                        aria-label="Введіть текст для пошуку">
-                    <button type="submit" class="search-button" aria-label="Натисніть для пошуку">
-                        <img alt="Іконка пошуку" src="../image/search.png" class="search-icon">
-                    </button>
-                </form>
+        <div class="header-wrapper">
+            <div class="head-nav">
+                <div class="top-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="../pages/callmeback.html">Передзвоніть мені</a></li>
+                            <li><a href="../pages/find.html">Знайти магазин</a></li>
+                            <li><a href="../pages/help.html">Центр допомоги</a></li>
+                            <li><a href="../pages/chat.html">Онлайн чат</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="account-options">
+                    <div class="language-selector">
+                        <div class="current-language" id="current-language">UA</div>
+                        <div class="language-dropdown" id="language-dropdown">
+                            <ul>
+                                <li><a href="#" data-lang="UA">Українська</a></li>
+                                <li><a href="#" data-lang="EN">English</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="../pages/track.html"><img class="header-icon" alt="Знайти замовлення"
+                            src="../image/tracking.png">Знайти
+                        замовлення</a>
+                    <a href="../pages/wishlist.html"><img class="header-icon" alt="Список побажань"
+                            src="../image/wishlist.png">Список
+                        побажань</a>
+                    <a href="../pages/account.html"><img class="header-icon" alt="Аккаунт"
+                            src="../image/user.png">Аккаунт</a>
+                </div>
             </div>
-            <div id="cart" class="shopping-cart">
-                <a href="#" id="cart-toggle"><img alt="Корзина" src="../image/shopping-cart.png"></a>
-                <p>Ваш кошик</p>
-                <ul id="cart-items">
-                    <!-- Товари які будуть додані -->
-                </ul>
-                <p id="cart-total">Загальна сума: грн</p>
-                <button id="checkout-button">Оформити замовлення</button>
-                <button id="clear-cart-button">Очистити кошик</button>
+            <div class="header-container">
+                <div class="choice-section">
+                    <div class="logo-section">
+                        <a href="../index.html" class="logo"><img alt="Логотип компанії"
+                                src="../image/logo_upd.png"></a>
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="../index.html">Продукти</a></li>
+                            <li><a href="../index.html">Бренди</a></li>
+                            <li><a href="../pages/agreement.html">Угода</a></li>
+                            <li><a href="../pages/gifts.html">Подарунки</a></li>
+                            <li><a href="../pages/sales.html">Знижки</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="line-container">
+                    <div class="search">
+                        <form action="#" method="GET" class="search-form" role="search">
+                            <input type="text" id="search-query" name="query" class="search-input"
+                                placeholder="Пошук..." aria-label="Введіть текст для пошуку">
+                            <button type="submit" class="search-button" aria-label="Натисніть для пошуку">
+                                <img alt="Іконка пошуку" src="../image/search.png" class="search-icon">
+                            </button>
+                        </form>
+                    </div>
+                    <div id="cart" class="shopping-cart">
+                        <a href="#" id="cart-toggle"><img alt="Корзина" src="../image/shopping-cart.png"
+                                class="cart-icon"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+
     <main>
-        <div class="sidebar">
-            <section class="choose">
-                <h2>Техніка та інша периферія</h2>
-                <ul>
-                    <li><a href="../pages/laptops.html">Ноутбуки</a></li>
-                    <li><a href="../pages/phones.html">Телефони</a></li>
-                    <li><a href="../pages/headphones.html">Навушники та аксесуари</a></li>
-                    <li><a href="../pages/wearable.html">Носимі гаджети</a></li>
-                </ul>
-            </section>
-            <section class="filters">
-                <div class="sidebar-filters">
-                    <h4>Бренд</h4>
+        <div class="main-wrapper">
+            <div class="sidebar">
+                <div class="choose">
+                    <h2>Техніка та інша периферія</h2>
                     <ul>
-                        <li><a href="#">Apple</a></li>
-                        <li><a href="#">Samsung</a></li>
-                        <li><a href="#">Xiaomi</a></li>
-                        <li><a href="#">Google</a></li>
-                    </ul>
-                    <h4>Камера</h4>
-                    <ul>
-                        <li><a href="#">15МП і менше</a></li>
-                        <li><a href="#">21МП-48МП</a></li>
-                        <li><a href="#">49МП-64МП</a></li>
-                        <li><a href="#">100МП+</a></li>
-                    </ul>
-                    <h4>Діагональ єкрану</h4>
-                    <ul>
-                        <li><a href="#">6.01" - 6.49"</a></li>
-                        <li><a href="#">6.5" - 6.9"</a></li>
-                        <li><a href="#">7.0" - 7.5"</a></li>
-                        <li><a href="#">7.6" - 8.5"</a></li>
-                    </ul>
-                    <div class="filter-price">
-                        <label for="price">Price</label>
-                        <input type="range" id="price" min="1" max="150000" step="100">
-                    </div>
-                    <h4>Оперативна пам'ять</h4>
-                    <ul>
-                        <li><a href="#">3ГБ</a></li>
-                        <li><a href="#">4ГБ</a></li>
-                        <li><a href="#">6ГБ</a></li>
-                        <li><a href="#">8ГБ+</a></li>
-
-                    </ul>
-                    <h4>Розмір пам'яті</h4>
-                    <ul>
-                        <li><a href="#">64ГБ</a></li>
-                        <li><a href="#">128ГБ</a></li>
-                        <li><a href="#">256ГБ</a></li>
-                        <li><a href="#">512ГБ+</a></li>
-                    </ul>
-                    <h4>Ємність аккумулятора</h4>
-                    <ul>
-                        <li><a href="#">3000 - 3999 мА*год</a></li>
-                        <li><a href="#">4000 - 4999 мА*год</a></li>
-                        <li><a href="#">5000 - 5999 мА*год</a></li>
-                    </ul>
-                    <h4>Знижка</h4>
-                    <ul>
-                        <li><a href="#">Присутня</a></li>
-                        <li><a href="#">Відсутня</a></li>
+                        <li><a href="../pages/laptops.html">Ноутбуки</a></li>
+                        <li><a href="../pages/phones.html">Телефони</a></li>
+                        <li><a href="../pages/headphones.html">Навушники та аксесуари</a></li>
+                        <li><a href="../pages/wearable.html">Носимі гаджети</a></li>
                     </ul>
                 </div>
-            </section>
-
-        </div>
-        <section class="products-section">
-            <div class="section-title">
-                <h3>Телефони</h3>
-                <div class="sort-options">
-                    <nav>
+                <div class="filters">
+                    <div class="sidebar-filters">
+                        <h4>Бренд</h4>
                         <ul>
-                            <li><a href="#">Спочатку популярні</a></li>
-                            <li><a href="#">Спочатку новинки</a></li>
-                            <li><a href="#">Спочатку дешевші</a></li>
-                            <li><a href="#">Спочатку зі знижками</a></li>
+                            <li>
+                                <input type="checkbox" id="apple">
+                                <label for="apple">Apple</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="samsung">
+                                <label for="samsung">Samsung</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="xiaomi">
+                                <label for="xiaomi">Xiaomi</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="google">
+                                <label for="google">Google</label>
+                            </li>
                         </ul>
-                        <button class="view-toggle" data-view="grid"><img alt="Кнопка сітка"
-                                src="../image/display_grid.png"></button>
-                        <button class="view-toggle" data-view="list"><img alt="Кнопка список"
-                                src="../image/display_list.png"></button>
-                    </nav>
+                        <h4>Камера</h4>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="camera-15">
+                                <label for="camera-15">15МП і менше</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="camera-21-48">
+                                <label for="camera-21-48">21МП-48МП</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="camera-49-64">
+                                <label for="camera-49-64">49МП-64МП</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="camera-100">
+                                <label for="camera-100">100МП+</label>
+                            </li>
+                        </ul>
+                        <h4>Діагональ єкрану</h4>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="screen-6-01-6-49">
+                                <label for="screen-6-01-6-49">6.01" - 6.49"</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="screen-6-5-6-9">
+                                <label for="screen-6-5-6-9">6.5" - 6.9"</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="screen-7-0-7-5">
+                                <label for="screen-7-0-7-5">7.0" - 7.5"</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="screen-7-6-8-5">
+                                <label for="screen-7-6-8-5">7.6" - 8.5"</label>
+                            </li>
+                        </ul>
+                        <h4>Оперативна пам'ять</h4>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="ram-3gb">
+                                <label for="ram-3gb">3ГБ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ram-4gb">
+                                <label for="ram-4gb">4ГБ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ram-6gb">
+                                <label for="ram-6gb">6ГБ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ram-8gb">
+                                <label for="ram-8gb">8ГБ+</label>
+                            </li>
+                        </ul>
+                        <h4>Розмір пам'яті</h4>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="storage-64gb">
+                                <label for="storage-64gb">64ГБ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="storage-128gb">
+                                <label for="storage-128gb">128ГБ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="storage-256gb">
+                                <label for="storage-256gb">256ГБ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="storage-512gb">
+                                <label for="storage-512gb">512ГБ+</label>
+                            </li>
+                        </ul>
+                        <div class="filter-price">
+                            <label for="price">Ціна</label>
+                            <input type="range" id="price" min="1" max="150000" step="100" value="75000">
+                            <div class="value">75000</div>
+                        </div>
+                        <h4>Ємність аккумулятора</h4>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="battery-3000-3999">
+                                <label for="battery-3000-3999">3000 - 3999 мА*год</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="battery-4000-4999">
+                                <label for="battery-4000-4999">4000 - 4999 мА*год</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="battery-5000-5999">
+                                <label for="battery-5000-5999">5000 - 5999 мА*год</label>
+                            </li>
+                        </ul>
+                        <h4>Знижка</h4>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="discount-yes">
+                                <label for="discount-yes">Присутня</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="discount-no">
+                                <label for="discount-no">Відсутня</label>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="products-list">
-
+            <div class="products-section">
+                <div class="section-title">
+                    <h3>Телефони</h3>
+                    <div class="sort-options">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Спочатку популярні</a></li>
+                                <li><a href="#">Спочатку новинки</a></li>
+                                <li><a href="#">Спочатку дешевші</a></li>
+                                <li><a href="#">Спочатку зі знижками</a></li>
+                            </ul>
+                        </nav>
+                        <div class="view-toggle-buttons">
+                            <button class="view-toggle" data-view="grid">
+                                <img alt="Кнопка сітка" src="../image/display_grid.png">
+                            </button>
+                            <button class="view-toggle" data-view="list">
+                                <img alt="Кнопка список" src="../image/display_list.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-list">
+                </div>
+                <div class="turn-back">
+                    <a href="../index.html">Повернутися на головну</a>
+                </div>
             </div>
-            <a href="../index.html">Повернутися на головну</a>
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -211,20 +308,20 @@
                     <li><a href="../pages/chat.html">Онлайн чат</a></li>
                 </ul>
             </div>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="https://web.telegram.org/"><img class="Socials" alt="Telegram Web"
-                                src="../image/telegram.png"></a></li>
-                    <li><a href="https://x.com/"><img class="Socials" alt="X site" src="../image/twitter.png"></a></li>
-                    <li><a href="https://instagram.com"><img class="Socials" alt="Instagram site"
-                                src="../image/instagram.png"></a></li>
-                    <li><a href="https://facebook.com"><img class="Socials" alt="Facebook site"
-                                src="../image/facebook-app-symbol.png"></a></li>
-                </ul>
-            </nav>
-
+            <div class="footer-socials">
+                <nav>
+                    <ul>
+                        <li><a href="https://web.telegram.org/"><img class="Socials" alt="Telegram Web"
+                                    src="../image/telegram.png"></a></li>
+                        <li><a href="https://x.com/"><img class="Socials" alt="X site" src="../image/twitter.png"></a>
+                        </li>
+                        <li><a href="https://instagram.com"><img class="Socials" alt="Instagram site"
+                                    src="../image/instagram.png"></a></li>
+                        <li><a href="https://facebook.com"><img class="Socials" alt="Facebook site"
+                                    src="../image/facebook-app-symbol.png"></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="footer-bottom">
             <p>Copyright© 2024. Усі права захищено</p>

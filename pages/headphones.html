@@ -10,137 +10,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="top-nav">
-            <nav>
-                <ul>
-                    <li><a href="../pages/callmeback.html">Передзвоніть мені</a></li>
-                    <li><a href="../pages/find.html">Знайти магазин</a></li>
-                    <li><a href="../pages/help.html">Центр допомоги</a></li>
-                    <li><a href="../pages/chat.html">Онлайн чат</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="account-options">
-            <p><a href="#">Україснька</a></p>
-            <ul>
-                <li class="current"><a href="#">Українська</a></li>
-                <li><a href="#">English</a></li>
-            </ul>
-            <a href="../pages/track.html"><img alt="Знайти замовлення" src="../image/tracking.png">Знайти замовлення</a>
-            <a href="../pages/wishlist.html"><img alt="Список побоажань" src="../image/wishlist.png">Список побажань</a>
-            <a href="../pages/account.html"><img alt="Аккаунт" src="../image/user.png">Аккаунт</a>
-        </div>
-        <div class="header-container">
-            <a href="../index.html" class="logo"> <img alt="Логотип компанії" src="../image/logo_upd.png"> </a>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Продукти</a></li>
-                    <li><a href="../index.html">Бренди</a></li>
-                    <li><a href="../pages/agreement.html">Угода</a></li>
-                    <li><a href="../pages/gifts.html">Подарунки</a></li>
-                    <li><a href="../pages/sales.html">Знижки</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="line-container">
-            <div class="search">
-                <form action="#" method="GET" class="search-form" role="search">
-                    <label for="search-query" class="sr-only">Пошук</label>
-                    <input type="text" id="search-query" name="query" class="search-input" placeholder="Пошук..."
-                        aria-label="Введіть текст для пошуку">
-                    <button type="submit" class="search-button" aria-label="Натисніть для пошуку">
-                        <img alt="Іконка пошуку" src="../image/search.png" class="search-icon">
-                    </button>
-                </form>
+        <div class="header-wrapper">
+            <div class="head-nav">
+                <div class="top-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="../pages/callmeback.html">Передзвоніть мені</a></li>
+                            <li><a href="../pages/find.html">Знайти магазин</a></li>
+                            <li><a href="../pages/help.html">Центр допомоги</a></li>
+                            <li><a href="../pages/chat.html">Онлайн чат</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="account-options">
+                    <div class="language-selector">
+                        <div class="current-language" id="current-language">UA</div>
+                        <div class="language-dropdown" id="language-dropdown">
+                            <ul>
+                                <li><a href="#" data-lang="UA">Українська</a></li>
+                                <li><a href="#" data-lang="EN">English</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="../pages/track.html"><img class="header-icon" alt="Знайти замовлення"
+                            src="../image/tracking.png">Знайти
+                        замовлення</a>
+                    <a href="../pages/wishlist.html"><img class="header-icon" alt="Список побажань"
+                            src="../image/wishlist.png">Список
+                        побажань</a>
+                    <a href="../pages/account.html"><img class="header-icon" alt="Аккаунт"
+                            src="../image/user.png">Аккаунт</a>
+                </div>
             </div>
-            <div id="cart" class="shopping-cart">
-                <a href="#" id="cart-toggle"><img alt="Корзина" src="../image/shopping-cart.png"></a>
-                <p>Ваш кошик</p>
-                <ul id="cart-items">
-                    <!-- Товари які будуть додані -->
-                </ul>
-                <p id="cart-total">Загальна сума: грн</p>
-                <button id="checkout-button">Оформити замовлення</button>
-                <button id="clear-cart-button">Очистити кошик</button>
+            <div class="header-container">
+                <div class="choice-section">
+                    <div class="logo-section">
+                        <a href="../index.html" class="logo"><img alt="Логотип компанії"
+                                src="../image/logo_upd.png"></a>
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="../index.html">Продукти</a></li>
+                            <li><a href="../index.html">Бренди</a></li>
+                            <li><a href="../pages/agreement.html">Угода</a></li>
+                            <li><a href="../pages/gifts.html">Подарунки</a></li>
+                            <li><a href="../pages/sales.html">Знижки</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="line-container">
+                    <div class="search">
+                        <form action="#" method="GET" class="search-form" role="search">
+                            <input type="text" id="search-query" name="query" class="search-input"
+                                placeholder="Пошук..." aria-label="Введіть текст для пошуку">
+                            <button type="submit" class="search-button" aria-label="Натисніть для пошуку">
+                                <img alt="Іконка пошуку" src="../image/search.png" class="search-icon">
+                            </button>
+                        </form>
+                    </div>
+                    <div id="cart" class="shopping-cart">
+                        <a href="#" id="cart-toggle"><img alt="Корзина" src="../image/shopping-cart.png"
+                                class="cart-icon"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+
     <main>
-        <div class="sidebar">
-            <section class="choose">
-                <h2>Техніка та інша периферія</h2>
-                <ul>
-                    <li><a href="../pages/laptops.html">Ноутбуки</a></li>
-                    <li><a href="../pages/phones.html">Телефони</a></li>
-                    <li><a href="../pages/headphones.html">Навушники та аксесуари</a></li>
-                    <li><a href="../pages/wearable.html">Носимі гаджети</a></li>
-                </ul>
-            </section>
-            <section class="filters">
-                <div class="sidebar-filters">
-                    <h4>Бренд</h4>
+        <div class="main-wrapper">
+            <div class="sidebar">
+                <div class="choose">
+                    <h2>Техніка та інша периферія</h2>
                     <ul>
-                        <li><a href="#">Apple</a></li>
-                        <li><a href="#">Sony</a></li>
-                        <li><a href="#">JBL</a></li>
-                        <li><a href="#">Logitech</a></li>
-                    </ul>
-                    <h4>Тип</h4>
-                    <ul>
-                        <li><a href="#">Вакуумні</a></li>
-                        <li><a href="#">Повнорозмірні</a></li>
-                        <li><a href="#">Вкладки</a></li>
-                    </ul>
-                    <h4>Тип підключення</h4>
-                    <ul>
-                        <li><a href="#">Бездротові</a></li>
-                        <li><a href="#">Дротові</a></li>
-                    </ul>
-                    <div class="filter-price">
-                        <label for="price">Price</label>
-                        <input type="range" id="price" min="1" max="150000" step="100">
-                    </div>
-                    <h4>Інтерфейс під'єднання</h4>
-                    <ul>
-                        <li><a href="#">USB Type-C</a></li>
-                        <li><a href="#">Lightning</a></li>
-                        <li><a href="#">3.5мм (mini-Jack)</a></li>
-                    </ul>
-                    <h4>Знижка</h4>
-                    <ul>
-                        <li><a href="#">Присутня</a></li>
-                        <li><a href="#">Відсутня</a></li>
+                        <li><a href="../pages/laptops.html">Ноутбуки</a></li>
+                        <li><a href="../pages/phones.html">Телефони</a></li>
+                        <li><a href="../pages/headphones.html">Навушники та аксесуари</a></li>
+                        <li><a href="../pages/wearable.html">Носимі гаджети</a></li>
                     </ul>
                 </div>
-            </section>
-        </div>
-        <section class="products-section">
-            <div class="section-title">
-                <h3>Навушники</h3>
-                <div class="sort-options">
-                    <nav>
+                <div class="filters">
+                    <div class="sidebar-filters">
+                        <h4>Бренд</h4>
                         <ul>
-                            <li><a href="#">Спочатку популярні</a></li>
-                            <li><a href="#">Спочатку новинки</a></li>
-                            <li><a href="#">Спочатку дешевші</a></li>
-                            <li><a href="#">Спочатку зі знижками</a></li>
+                            <li>
+                                <input type="checkbox" id="apple">
+                                <label for="apple">Apple</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sony">
+                                <label for="sony">Sony</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="jbl">
+                                <label for="jbl">JBL</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="logitech">
+                                <label for="logitech">Logitech</label>
+                            </li>
                         </ul>
-                        <button class="view-toggle" data-view="grid"><img alt="Кнопка сітка"
-                                src="../image/display_grid.png"></button>
-                        <button class="view-toggle" data-view="list"><img alt="Кнопка список"
-                                src="../image/display_list.png"></button>
-                    </nav>
+                        <h4>Тип</h4>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="vacuum">
+                                <label for="vacuum">Вакуумні</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="over-ear">
+                                <label for="over-ear">Повнорозмірні</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="in-ear">
+                                <label for="in-ear">Вкладки</label>
+                            </li>
+                        </ul>
+                        <h4>Тип підключення</h4>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="wireless">
+                                <label for="wireless">Бездротові</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="wired">
+                                <label for="wired">Дротові</label>
+                            </li>
+                        </ul>
+                        <div class="filter-price">
+                            <label for="price">Ціна</label>
+                            <input type="range" id="price" min="1" max="150000" step="100" value="75000">
+                            <div class="value">75000</div>
+                        </div>
+                        <h4>Інтерфейс під'єднання</h4>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="usb-c">
+                                <label for="usb-c">USB Type-C</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="lightning">
+                                <label for="lightning">Lightning</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="jack">
+                                <label for="jack">3.5мм (mini-Jack)</label>
+                            </li>
+                        </ul>
+                        <h4>Знижка</h4>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="discount-yes">
+                                <label for="discount-yes">Присутня</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="discount-no">
+                                <label for="discount-no">Відсутня</label>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="products-list">
+            <div class="products-section">
+                <div class="section-title">
+                    <h3>Навушники</h3>
+                    <div class="sort-options">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Спочатку популярні</a></li>
+                                <li><a href="#">Спочатку новинки</a></li>
+                                <li><a href="#">Спочатку дешевші</a></li>
+                                <li><a href="#">Спочатку зі знижками</a></li>
+                            </ul>
+                        </nav>
+                        <div class="view-toggle-buttons">
+                            <button class="view-toggle" data-view="grid">
+                                <img alt="Кнопка сітка" src="../image/display_grid.png">
+                            </button>
+                            <button class="view-toggle" data-view="list">
+                                <img alt="Кнопка список" src="../image/display_list.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-list">
+                </div>
+                <div class="turn-back">
+                    <a href="../index.html">Повернутися на головну</a>
+                </div>
             </div>
-            <a href="../index.html">Повернутися на головну</a>
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -192,20 +258,20 @@
                     <li><a href="../pages/chat.html">Онлайн чат</a></li>
                 </ul>
             </div>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="https://web.telegram.org/"><img class="Socials" alt="Telegram Web"
-                                src="../image/telegram.png"></a></li>
-                    <li><a href="https://x.com/"><img class="Socials" alt="X site" src="../image/twitter.png"></a></li>
-                    <li><a href="https://instagram.com"><img class="Socials" alt="Instagram site"
-                                src="../image/instagram.png"></a></li>
-                    <li><a href="https://facebook.com"><img class="Socials" alt="Facebook site"
-                                src="../image/facebook-app-symbol.png"></a></li>
-                </ul>
-            </nav>
-
+            <div class="footer-socials">
+                <nav>
+                    <ul>
+                        <li><a href="https://web.telegram.org/"><img class="Socials" alt="Telegram Web"
+                                    src="../image/telegram.png"></a></li>
+                        <li><a href="https://x.com/"><img class="Socials" alt="X site" src="../image/twitter.png"></a>
+                        </li>
+                        <li><a href="https://instagram.com"><img class="Socials" alt="Instagram site"
+                                    src="../image/instagram.png"></a></li>
+                        <li><a href="https://facebook.com"><img class="Socials" alt="Facebook site"
+                                    src="../image/facebook-app-symbol.png"></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="footer-bottom">
             <p>Copyright© 2024. Усі права захищено</p>
