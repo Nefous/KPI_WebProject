@@ -1,0 +1,142 @@
+.follows h2 {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.follows p {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.follows form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.follows input[type="email"] {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.follows input[type="email"]:focus {
+    border-color: #ff007f;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.follows button {
+    background: linear-gradient(90deg, #ff7eb3, #ff65f9);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.follows button:hover {
+    background: linear-gradient(90deg, #ff65f9, #d764ff);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.follows button:active {
+    background: linear-gradient(90deg, #d764ff, #ff7eb3);
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
+
+.footer-content h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 15px;
+}
+
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #6c757d;
+    transition: color 0.1s ease-in-out, border-bottom 0.1s ease-in-out;
+}
+
+.footer-content ul li a:hover {
+    color: #333;
+    border-bottom: 1px solid #000;
+    font-weight: 500;
+}
+
+.footer-socials nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin-top: 75px;
+}
+
+.footer-socials nav ul li {
+    list-style: none;
+}
+
+.footer-socials nav ul li a:hover {
+    border-bottom: none;
+}
+
+.Socials {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s;
+}
+
+.Socials:hover {
+    transform: scale(1.3);
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media screen {}
