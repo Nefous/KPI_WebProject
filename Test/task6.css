@@ -1,0 +1,11 @@
+body{
+    background-color: #d3d3d3;
+}
+
+.block{
+    font-family: Arial;
+    font-size: 18px;
+    color:blue;
+    border: 1px solid black;
+    max-width: 150px;
+}

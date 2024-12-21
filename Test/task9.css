@@ -1,0 +1,10 @@
+.styled-button{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.styled-button:hover{
+    background-color: green;
+}
