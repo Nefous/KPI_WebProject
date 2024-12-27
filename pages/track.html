@@ -86,7 +86,7 @@
     </header>
 
     <main>
-        <div class ="follow-order">
+        <div class="follow-order">
             <div class="track">
                 <h1>Для того щоб, відслідкувати своє замовлення ви повинні скористуватися сервісами трекінгу вашої
                     пошти.</h1>
@@ -110,12 +110,13 @@
         <div class="follows">
             <h2>Підписуйтесь на наші оновлення!</h2>
             <p>Отримуйте останні оновлення про продукти, які ви шукали</p>
-            <form method="POST">
+            <form method="POST" id="subscribeForm">
                 <input type="email" placeholder="Ваша електронна адреса"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="40" required=""
                     title="Введіть коректну електронну адресу">
                 <button type="submit">Підписатися</button>
             </form>
+            <div class="notification-container"></div>
         </div>
         <div class="footer-content">
             <div>
@@ -174,6 +175,7 @@
             <p>Copyright© 2024. Усі права захищено</p>
         </div>
     </footer>
+    <script src="../scripts/main.js" async defer></script>
 </body>
 
 </html>

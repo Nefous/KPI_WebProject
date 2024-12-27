@@ -91,7 +91,7 @@
                 <h1>Центр допомоги</h1>
                 <p>Тут ви можете знайти відповіді на часті запитання та зв'язатися з нашою службою підтримки</p>
             </div>
-    
+
             <div class="help-questions">
                 <ul>
                     <li class="help-item">
@@ -128,27 +128,30 @@
                         <a href="#" class="question">Як повернути свій товар?</a>
                         <div class="answer">
                             Ви можете оформити повернення протягом 14 днів після отримання товару. <a
-                                href="../pages/callmeback.html">Зв'яжіться</a> з нашою підтримкою для отримання інструкцій.
+                                href="../pages/callmeback.html">Зв'яжіться</a> з нашою підтримкою для отримання
+                            інструкцій.
                         </div>
                     </li>
                     <li class="help-item">
                         <img alt="Запитання" src="../image/help.png">
                         <a href="#" class="question">Як зв'язатися з вашою службою підтримки?</a>
                         <div class="answer">
-                            Ви можете зв'язатися з нашою підтримкою на <a href="../pages/callmeback.html">цій сторінці</a>,
+                            Ви можете зв'язатися з нашою підтримкою на <a href="../pages/callmeback.html">цій
+                                сторінці</a>,
                             або написати в наш <a href="../pages/chat.html">онлайн чат</a>
                         </div>
                     </li>
                 </ul>
             </div>
-    
+
             <div class="help-other">
                 <p>Всі інші запитання ви можете задати подзвонивши на нашу гарячу лінію, або написавши на пошту!</p>
                 <ul>
-                    <li>Kyivstar: +38096000000</li>
-                    <li>Vodafone: +38099000000</li>
-                    <li>Lifecell: +38063000000</li>
-                    <li>Email: catronix@gmail.com</li>
+                    <li><span class="phone">Kyivstar: </span> <a href="tel:+38096000000"> +38096000000</a></li>
+                    <li><span class="phone">Vodafone: </span> <a href="tel:+38099000000"> +38099000000</a></li>
+                    <li><span class="phone">Lifecell: </span> <a href="tel:+38063000000"> +38063000000</a></li>
+                    <li><span class="email">Email: </span> <a href="mailto:catronix@gmail.com"> catronix@gmail.com</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -158,12 +161,13 @@
         <div class="follows">
             <h2>Підписуйтесь на наші оновлення!</h2>
             <p>Отримуйте останні оновлення про продукти, які ви шукали</p>
-            <form method="POST">
+            <form method="POST" id="subscribeForm">
                 <input type="email" placeholder="Ваша електронна адреса"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="40" required=""
                     title="Введіть коректну електронну адресу">
                 <button type="submit">Підписатися</button>
             </form>
+            <div class="notification-container"></div>
         </div>
         <div class="footer-content">
             <div>
@@ -222,6 +226,7 @@
             <p>Copyright© 2024. Усі права захищено</p>
         </div>
     </footer>
+    <script src="../scripts/main.js" defer></script>
 </body>
 
 </html>

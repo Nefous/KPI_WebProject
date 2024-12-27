@@ -84,7 +84,7 @@
             </div>
         </div>
     </header>
-    
+
     <main>
         <div class="account-section">
             <div class="logout-section">
@@ -93,25 +93,25 @@
                     Вийти з акаунта
                 </button>
             </div>
-            
+
             <h1>Мій акаунт</h1>
             <div class="account-details">
                 <div class="account-header">
                     <h2>Особиста інформація</h2>
                 </div>
-                <form action="#" method="POST" class="account-form">
+                <form id="account-form" class="account-form">
                     <label for="first-name">Ім'я:</label>
-                    <input type="text" id="first-name" name="first-name" value="" required>
-        
+                    <input type="text" id="first-name" name="first-name" required>
+
                     <label for="last-name">Прізвище:</label>
-                    <input type="text" id="last-name" name="last-name" value="" required>
-        
+                    <input type="text" id="last-name" name="last-name" required>
+
                     <label for="email">Електронна адреса:</label>
-                    <input type="email" id="email" name="email" value="" required>
-        
+                    <input type="email" id="email" name="email" required>
+
                     <label for="phone">Телефон:</label>
-                    <input type="tel" id="phone" name="phone" value="" required>
-    
+                    <input type="tel" id="phone" name="phone" required>
+
                     <div class="button-container">
                         <button type="submit" class="submit-button">
                             <img alt="Оновити дані" src="../image/updated.png">
@@ -122,17 +122,18 @@
             </div>
         </div>
     </main>
-    
+
     <footer>
         <div class="follows">
             <h2>Підписуйтесь на наші оновлення!</h2>
             <p>Отримуйте останні оновлення про продукти, які ви шукали</p>
-            <form method="POST">
+            <form method="POST" id="subscribeForm">
                 <input type="email" placeholder="Ваша електронна адреса"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="40" required=""
                     title="Введіть коректну електронну адресу">
                 <button type="submit">Підписатися</button>
             </form>
+            <div class="notification-container"></div>
         </div>
         <div class="footer-content">
             <div>
@@ -191,6 +192,7 @@
             <p>Copyright© 2024. Усі права захищено</p>
         </div>
     </footer>
+    <script src="../scripts/main.js" async defer></script>
 </body>
 
 </html>

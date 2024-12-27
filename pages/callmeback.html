@@ -92,7 +92,7 @@
             </div>
             <div class="call-form">
                 <h2>Замовити зворотній дзвінок</h2>
-                <form action="../index.html" class="callback-form">
+                <form id="callback-form" class="callback-form">
                     <div class="form-group">
                         <label for="name">Ваше ім'я</label>
                         <input type="text" id="name" name="name" required placeholder="Введіть ваше ім'я">
@@ -114,9 +114,12 @@
                     <li><span class="phone">Kyivstar: </span> <a href="tel:+38096000000"> +38096000000</a></li>
                     <li><span class="phone">Vodafone: </span> <a href="tel:+38099000000"> +38099000000</a></li>
                     <li><span class="phone">Lifecell: </span> <a href="tel:+38063000000"> +38063000000</a></li>
-                    <li><span class="email">Email: </span> <a href="mailto:catronix@gmail.com"> catronix@gmail.com</a></li>
+                    <li><span class="email">Email: </span> <a href="mailto:catronix@gmail.com"> catronix@gmail.com</a>
+                    </li>
                 </ul>
             </div>
+        </div>
+        <div class="notification-container">
         </div>
     </main>
 
@@ -124,12 +127,13 @@
         <div class="follows">
             <h2>Підписуйтесь на наші оновлення!</h2>
             <p>Отримуйте останні оновлення про продукти, які ви шукали</p>
-            <form method="POST">
+            <form method="POST" id="subscribeForm">
                 <input type="email" placeholder="Ваша електронна адреса"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="40" required=""
                     title="Введіть коректну електронну адресу">
                 <button type="submit">Підписатися</button>
             </form>
+            <div class="notification-container"></div>
         </div>
         <div class="footer-content">
             <div>
@@ -188,6 +192,7 @@
             <p>Copyright© 2024. Усі права захищено</p>
         </div>
     </footer>
+    <script src="../scripts/main.js" async defer></script>
 </body>
 
 </html>

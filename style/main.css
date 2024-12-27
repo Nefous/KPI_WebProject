@@ -169,17 +169,19 @@
 .info-content {
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3s ease-out;
     opacity: 0;
     padding: 0 20px;
+    transition: max-height 1s ease-in-out, opacity 0.5s ease-out;
 }
 
 .info-content p {
+    font-style: italic;
     margin: 0;
-    padding: 15px 0;
-    line-height: 1.6;
-    color: #fff;
+    padding: 10px;
+    line-height: 1.8;
+    color: #f0f8ff;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .info-toggle {
@@ -199,7 +201,7 @@
 }
 
 .info-section.open .info-content {
-    max-height: 300px;
+    max-height: 500px;
     opacity: 1;
 }
 
@@ -212,6 +214,7 @@
     margin: 100px auto;
     align-items: center;
 }
+
 
 .popular-items li {
     border-radius: 25px;
@@ -700,4 +703,47 @@
 .turn-back a:hover {
     background: #2575fc;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Сповіщення */
+
+.notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.notification {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s, fadeOut 0.3s 2.7s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
 }
